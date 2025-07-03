@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="appIconImage.png" />
+<meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wren – The Workout Recovery Engine</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      color-scheme: light dark;
+      --accent-color: #007aff;
+      --accent-color-dark: #005bb5;
+    }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #ffffff;
+      color: #000000;
+      line-height: 1.6;
+      text-align: center;
+    }
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #0f0f0f;
+        color: #ffffff;
+      }
+      .feature {
+        border-left-color: var(--accent-color);
+      }
+      footer {
+        color: #888;
+      }
+    }
+    header, section, footer {
+      padding: 4rem 1.5rem 2.5rem;
+      max-width: 960px;
+      margin: auto;
+    }
+    h1, h2, h3 {
+      font-family: 'Bebas Neue', sans-serif;
+      letter-spacing: 0.5px;
+      font-family: 'Bebas Neue', sans-serif;
+    }
+    .hero {
+      text-align: center;
+    }
+    .cta-form {
+      margin-top: 1.5rem;
+    }
+    input[type="email"] {
+      padding: 0.75rem;
+      width: 60%;
+      max-width: 300px;
+      border: 1px solid var(--accent-color);
+      border-radius: 6px;
+      margin-right: 0.5rem;
+    }
+    button {
+      padding: 0.75rem 1.25rem;
+      background: var(--accent-color);
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      color: #fff;
+      transition: background 0.3s ease, transform 0.1s ease;
+    }
+    button:hover {
+      background: var(--accent-color-dark);
+    }
+    button:active {
+      transform: scale(0.97);
+    }
+    .features {
+      display: grid;
+      gap: 2rem;
+    }
+    .feature {
+      border-left: 4px solid var(--accent-color);
+      padding-left: 1rem;
+      text-align: left;
+    }
+    .screenshots {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .screenshots img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+      border: 2px solid var(--accent-color);
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    a {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+      h1 {
+      font-size: 3rem;
+    }
+    h2 {
+      font-size: 2.25rem;
+    }
+    h3 {
+      font-size: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <img src="/path-to-your-logo.png" alt="Wren Logo" style="width: 100px; height: auto; margin-bottom: 1rem;" />
+    <h1>Train hard. Recover smarter.</h1>
+    <p>Wren is the Workout Recovery Engine — combining AI and Apple Watch data to guide your training, improve recovery, and help you hit peak performance.</p>
+    </header>
+
+  <section class="cta-form">
+  <form action="https://forms.mailerlite.com/f/95779311fb639191ab9e2e50b" method="POST">
+    <input type="email" name="EMAIL" placeholder="Your email address" required />
+    <button type="submit">Join the Beta →</button>
+  </form>
+  <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #ccc;">Spots are limited. First invites go out soon.</p>
+</section>
+
+  
+
+  <section style="padding-top: 1rem;">
+    <h2>Made for Every Athlete</h2>
+    <p>Whether you're chasing PRs, sparring rounds, hitting a spin class, or just staying active — Wren is built for you. From serious athletes to weekend warriors, Wren helps you recover smarter and train with purpose.</p>
+  </section>
+
+  <section>
+    <h2>Key Features</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>🧠 AI-Powered Training Insights</h3>
+        <p>Wren analyzes your training patterns and recovery data to guide you toward smarter, more effective workouts — with more adaptive feedback coming soon.</p>
+      </div>
+      <div class="feature">
+        <h3>⏱️ Customizable Round Timer</h3>
+        <p>Whether you're lifting, sparring, hitting the bag, or running circuits — Wren's timer keeps your rounds and rest periods dialed in. Set profiles for every training style and stay focused.</p>
+      </div>
+      <div class="feature">
+        <h3>📈 Recovery-First Guidance</h3>
+        <p>Wren uses Apple Watch data like HRV, resting heart rate, and sleep to track how ready your body is — so you can train without guesswork.</p>
+      </div>
+      <div class="feature">
+        <h3>📱 Apple Watch Integration</h3>
+        <p>No manual tracking. Wren pulls your data directly from Apple Health and makes it actionable — automatically.</p>
+      </div>
+      <div class="feature">
+        <h3>📝 Quick, Minimal Logging</h3>
+        <p>Wren makes it easy to record your training sessions. Logs are auto-filled with date and duration — just add notes if you want to track more.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Take a Look Inside Wren</h2>
+    <p>Built for clarity, speed, and focus — so you can train smarter without distractions.</p>
+    <div class="screenshots">
+      <img src="readinessScore.png" alt="Recovery Overview" />
+      <img src="timerRunning.png" alt="Timer In Action" />
+      <img src="timerSetup.png" alt="Preset Configuration" />
+    </div>
+  </section>
+
+  <section class="cta-form">
+  <h2>Ready to Train Smarter?</h2>
+  <p>Join the beta and help shape the future of Wren. Get early access and stay updated as we launch new features.</p>
+  <form action="https://forms.mailerlite.com/f/your-form-id" method="POST">
+    <input type="email" name="EMAIL" placeholder="Your email address" required />
+    <button type="submit">Join the Beta →</button>
+  </form>
+    <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #ccc;">Spots are limited. First invites go out soon.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Wren. All rights reserved.</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms</a></p>
+  </footer>
+</body>
+</html>
