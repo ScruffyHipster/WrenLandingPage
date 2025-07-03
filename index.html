@@ -112,6 +112,103 @@
       font-size: 1.5rem;
     }
   </style>
+
+
+<style>
+  @media (prefers-color-scheme: dark) {
+    .ml-form-embedContainer {
+      background-color: #0f0f0f !important;
+    }
+    .ml-form-embedWrapper {
+      background-color: #1c1c1c !important;
+      color: #ffffff !important;
+    }
+    .ml-form-embedWrapper input[type="email"] {
+      background-color: #2a2a2a !important;
+      color: #ffffff !important;
+      border-color: #007aff !important;
+    }
+    .ml-form-embedWrapper ::placeholder {
+      color: #bbbbbb !important;
+    }
+    .ml-form-successContent h4 {
+      color: #66ccff !important;
+    }
+    .ml-form-successContent p {
+      color: #cccccc !important;
+    }
+  }
+</style>
+
+
+
+<style>
+  .ml-form-formContent {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 480px) {
+    .ml-form-formContent {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .ml-form-formContent .ml-form-fieldRow,
+    .ml-form-formContent .ml-form-embedSubmit {
+      width: 100%;
+    }
+
+    .ml-form-embedSubmit button {
+      width: 100%;
+    }
+  }
+</style>
+
+
+<style>
+  .ml-form-formContent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ml-form-fieldRow {
+    flex: 1 1 250px;
+    min-width: 200px;
+  }
+
+  .ml-form-fieldRow input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .ml-form-embedSubmit {
+    flex: 0 1 auto;
+  }
+
+  .ml-form-embedSubmit button {
+    white-space: nowrap;
+  }
+
+  @media (max-width: 600px) {
+    .ml-form-formContent {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .ml-form-embedSubmit button {
+      width: 100%;
+    }
+  }
+</style>
+
 </head>
 <body>
   <header class="hero">
@@ -121,11 +218,57 @@
     </header>
 
   <section class="cta-form">
-  <form action="https://forms.mailerlite.com/f/95779311fb639191ab9e2e50b" method="POST">
-    <input type="email" name="EMAIL" placeholder="Your email address" required />
-    <button type="submit">Join the Beta →</button>
-  </form>
-  <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #ccc;">Spots are limited. First invites go out soon.</p>
+<!-- MailerLite Embed Form -->
+<style>
+  .primary:hover {
+    background-color: #005bb5 !important;
+  }
+  .primary:active {
+    transform: scale(0.97);
+  }
+</style>
+<div id="mlb2-27983372" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-27983372" style="display: flex; justify-content: center; padding: 3rem 1rem; background-color: #f9f9f9;">
+  <div class="ml-form-align-center" style="max-width: 500px; width: 100%; text-align: center;">
+    <div class="ml-form-embedWrapper embedForm" style="border-radius: 16px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); padding: 2rem; background-color: white;">
+      <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
+        <form class="ml-block-form" action="https://assets.mailerlite.com/jsonp/1640328/forms/158937690367067689/subscribe" method="post" target="_blank">
+          <div class="ml-form-formContent">
+            <div class="ml-form-fieldRow ml-last-item" style="flex: 1;">
+              <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
+                <input aria-label="email" aria-required="true" type="email" class="form-control" name="fields[email]" placeholder="Your email address" autocomplete="email" style="width: 100%; padding: 0.75rem; border: 1px solid #007aff; border-radius: 6px; font-size: 1rem;">
+              </div>
+            </div>
+            <div class="ml-form-embedSubmit">
+              <button type="submit" class="primary" style="padding: 0.75rem 1.25rem; font-size: 1rem; font-weight: 600; background: #007aff; border: none; border-radius: 6px; color: white; cursor: pointer; transition: background 0.3s ease, transform 0.1s ease;">Join the Beta →</button>
+              <button disabled style="display: none;" type="button" class="loading">
+                <div class="ml-form-embedSubmitLoad"></div>
+                <span class="sr-only">Loading...</span>
+              </button>
+            </div>
+          </div>
+          <input type="hidden" name="ml-submit" value="1">
+          <input type="hidden" name="anticsrf" value="true">
+        </form>
+      </div>
+      <div class="ml-form-successBody row-success" style="display: none">
+        <div class="ml-form-successContent">
+          <h4 style="font-size: 1.5rem; font-weight: 600; color: #007aff; margin-top: 1rem;">Thank you!</h4>
+          <p style="font-size: 1rem; color: #4B5563;">You have successfully joined our subscriber list.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  function ml_webform_success_27983372() {
+    var $ = ml_jQuery || jQuery;
+    $('.ml-subscribe-form-27983372 .row-success').show();
+    $('.ml-subscribe-form-27983372 .row-form').hide();
+  }
+</script>
+<script src="https://groot.mailerlite.com/js/w/webforms.min.js?v176e10baa5e7ed80d35ae235be3d5024" type="text/javascript"></script>
+<!-- End MailerLite Embed Form -->
+
 </section>
 
   
@@ -172,18 +315,62 @@
   </section>
 
   <section class="cta-form">
-  <h2>Ready to Train Smarter?</h2>
-  <p>Join the beta and help shape the future of Wren. Get early access and stay updated as we launch new features.</p>
-  <form action="https://forms.mailerlite.com/f/your-form-id" method="POST">
-    <input type="email" name="EMAIL" placeholder="Your email address" required />
-    <button type="submit">Join the Beta →</button>
-  </form>
-    <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #ccc;">Spots are limited. First invites go out soon.</p>
-  </section>
+<!-- MailerLite Embed Form -->
+<style>
+  .primary:hover {
+    background-color: #005bb5 !important;
+  }
+  .primary:active {
+    transform: scale(0.97);
+  }
+</style>
+<div id="mlb2-27983372" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-27983372" style="display: flex; justify-content: center; padding: 3rem 1rem; background-color: #f9f9f9;">
+  <div class="ml-form-align-center" style="max-width: 500px; width: 100%; text-align: center;">
+    <div class="ml-form-embedWrapper embedForm" style="border-radius: 16px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); padding: 2rem; background-color: white;">
+      <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
+        <form class="ml-block-form" action="https://assets.mailerlite.com/jsonp/1640328/forms/158937690367067689/subscribe" method="post" target="_blank">
+          <div class="ml-form-formContent">
+            <div class="ml-form-fieldRow ml-last-item" style="flex: 1;">
+              <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
+                <input aria-label="email" aria-required="true" type="email" class="form-control" name="fields[email]" placeholder="Your email address" autocomplete="email" style="width: 100%; padding: 0.75rem; border: 1px solid #007aff; border-radius: 6px; font-size: 1rem;">
+              </div>
+            </div>
+            <div class="ml-form-embedSubmit">
+              <button type="submit" class="primary" style="padding: 0.75rem 1.25rem; font-size: 1rem; font-weight: 600; background: #007aff; border: none; border-radius: 6px; color: white; cursor: pointer; transition: background 0.3s ease, transform 0.1s ease;">Join the Beta →</button>
+              <button disabled style="display: none;" type="button" class="loading">
+                <div class="ml-form-embedSubmitLoad"></div>
+                <span class="sr-only">Loading...</span>
+              </button>
+            </div>
+          </div>
+          <input type="hidden" name="ml-submit" value="1">
+          <input type="hidden" name="anticsrf" value="true">
+        </form>
+      </div>
+      <div class="ml-form-successBody row-success" style="display: none">
+        <div class="ml-form-successContent">
+          <h4 style="font-size: 1.5rem; font-weight: 600; color: #007aff; margin-top: 1rem;">Thank you!</h4>
+          <p style="font-size: 1rem; color: #4B5563;">You have successfully joined our subscriber list.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  function ml_webform_success_27983372() {
+    var $ = ml_jQuery || jQuery;
+    $('.ml-subscribe-form-27983372 .row-success').show();
+    $('.ml-subscribe-form-27983372 .row-form').hide();
+  }
+</script>
+<script src="https://groot.mailerlite.com/js/w/webforms.min.js?v176e10baa5e7ed80d35ae235be3d5024" type="text/javascript"></script>
+<!-- End MailerLite Embed Form -->
+
+</section>
 
   <footer>
     <p>&copy; 2025 Wren. All rights reserved.</p>
-    <p><a href="#">Privacy Policy</a> | <a href="#">Terms</a></p>
+    <p><a href="privacyPolicy.html">Privacy Policy</a> | <a href="termsOfService.html">Terms Of Service</a></p>
   </footer>
 </body>
 </html>
